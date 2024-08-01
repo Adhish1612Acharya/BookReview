@@ -84,7 +84,7 @@ const EditBook: FC = () => {
             {!logoutLoad ? (
               <>
                 <NavBar navigate={navigate} login={navLogin} />
-                <h1 style={{ textAlign: "center" }}>Host Your&nbsp;</h1>
+                <h1 style={{ textAlign: "center" }}>Edit Your&nbsp;</h1>
                 <AutoStoriesRoundedIcon fontSize="large" />
 
                 <BookForm
