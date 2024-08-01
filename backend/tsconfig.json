@@ -107,9 +107,9 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  },
-  "include": [
-    "src/**/*",
-    "types/*" // Make sure this includes the path to your augmentation files
-  ]
+  }
+  // "include": [
+  //   "src/**/*",
+  //   "types/*" // Make sure this includes the path to your augmentation files
+  // ]
 }

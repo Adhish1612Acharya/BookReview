@@ -19,7 +19,7 @@ import User from "./models/User";
 import bookRouter from "./routes/book";
 import userRouter from "./routes/user";
 
-const DB_URL = "mongodb://127.0.0.1:27017/bookreview";
+const DB_URL = process.env.DB_PORT || "mongodb://127.0.0.1:27017/farmersworld";
 // process.env.DB_PORT ||
 main()
   .then(() => {

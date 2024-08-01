@@ -14,13 +14,14 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        argsIgnorePattern: "^_",
-        varsIgnorePattern: "^_",
-      },
-    ],
+    // "@typescript-eslint/no-unused-vars": [
+    //   "error",
+    //   {
+    //     argsIgnorePattern: "^_",
+    //     varsIgnorePattern: "^_",
+    //   },
+    // ],
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     overrides: [
       {
         files: ["./src/routes/user/Home.tsx"],

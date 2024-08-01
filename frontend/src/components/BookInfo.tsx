@@ -2,7 +2,7 @@ import { Paper, Typography } from "@mui/material";
 import { FC } from "react";
 import { bookObj } from "../types/routesTypes/user/HomePage";
 import "../styles/BookInfo.css";
-import BookInfoBtns from "./BookInfoBtns";
+// import BookInfoBtns from "./BookInfoBtns";
 
 interface bookInfoProps {
   book: bookObj;

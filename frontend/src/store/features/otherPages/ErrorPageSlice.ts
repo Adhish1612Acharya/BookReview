@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 interface statObj {
@@ -15,7 +15,7 @@ const initialState: statObj = {
 
 export const checkLogin = createAsyncThunk(
   "/loginCheck",
-  async (_, thunkAPI) => {
+  async (_, _thunkAPI) => {
     const response = await axios.get("/api/loginCheck", {
       withCredentials: true,
     });
@@ -28,7 +28,7 @@ export const ErrorPageSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(checkLogin.pending, (state, action) => {
+    builder.addCase(checkLogin.pending, (state, _action) => {
       state.showComponent = false;
     });
     builder.addCase(checkLogin.fulfilled, (state, action) => {

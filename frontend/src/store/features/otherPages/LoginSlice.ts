@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import {
   payLoad,
-  payLoad2,
   statObj,
   valueObj,
 } from "../../../types/storeTypes/LoginSlice";
